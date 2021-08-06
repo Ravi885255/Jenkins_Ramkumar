@@ -18,12 +18,21 @@ public class TC_001 {
 		}
 	
 	// this is the first testcase
-	@Test
+	@Test(groups= {"Regression", "Sanity", "Smoke"})
 	
 	public void VerifyFBLogin()
 	{
 		startbrowser("https://www.fb.com/");
 		driver.close();
 	}	
+	
+	@Test(groups= {"Regression", "Sanity"})
+	public void VerifyFBLogin1()
+	{
+		startbrowser("https://www.fb.com/");
+		driver.close();
+	}
+	
+	// Test
 
 }
